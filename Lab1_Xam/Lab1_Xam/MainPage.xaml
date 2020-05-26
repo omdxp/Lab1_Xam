@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Lab1_Xam.MainPage">
+
+    <StackLayout>
+        <Label Text="Height" FontSize="Large" />
+        <Entry x:Name="eHeight" Keyboard="Numeric" TextChanged="eHeight_TextChanged"/>
+        <Label Text="Weight" FontSize="Large"/>
+        <Entry x:Name="eWeight" Keyboard="Numeric" TextChanged="eWeight_TextChanged" />
+        <Label x:Name="result" FontSize="Large" />
+        <Button x:Name="button" Text="Calculate BMI" Clicked="CalculateBMIClicked" IsEnabled="False"/>
+    </StackLayout>
+
+</ContentPage>
